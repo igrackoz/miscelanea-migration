@@ -1,0 +1,24 @@
+$mainColor: #e64747;
+$navPosition: 10;
+
+.nav-mobile{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    position: fixed;
+    height: 18mm;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: 10px;
+    border-radius: 9mm;
+    box-shadow: -1px 3px 87px -10px white;
+    overflow: hidden;
+    transform: translateY(0px);
+    transition: transform 0.5s cubic-bezier(0.19, 1, 0.19, 1);
+    background-color: $mainColor;
+
+    z-index: $navPosition;
+}
