@@ -6,9 +6,24 @@ use App\Http\Controllers\testController;
 use App\Http\Controllers\dataController;
 
 Route::get('/', function () {
-    $departamentos = DB::table('departments')->get();
-    return view('welcome', ['departments' => $departamentos]);
+    return view('home');
+})->name('home');
+
+Route::get('/departamentos', function () {
+    return view('departments');
+})->name('departamentos');
+
+Route::get('/resultados', function () {
+    return view('search');
 });
+
+Route::get('/carrito', function () {
+    return view('cart');
+})->name('carrito');
+
+Route::get('/perfil', function () {
+    return view('profile');
+})->name('perfil');
 
 Route::get('/prueba', function () {
 
@@ -16,6 +31,3 @@ Route::get('/prueba', function () {
     return view('test', ['departamentos' => $departamentos]);
 
 })->name('prueba');
-
-
-Route::get('/datos', [dataController::class, 'data'] )->name('datos');

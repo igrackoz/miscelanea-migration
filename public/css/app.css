@@ -8,22 +8,56 @@ body, html {
   background-color: #0D6EFD;
 }
 
+a {
+  text-decoration: none;
+}
+
+.nav-mobile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.nav-circle {
+  position: fixed;
+  bottom: 0;
+  margin: 2px;
+  box-shadow: -1px 3px 87px -10px white;
+  background-color: #e64747;
+  z-index: 10;
+  height: 86px;
+  width: 86px;
+  border-radius: 43px;
+}
+
 .nav-mobile {
   position: fixed;
   right: 0;
   left: 0;
   bottom: 0;
   margin: 10px;
-  box-shadow: -1px 3px 87px -10px white;
   z-index: 10;
-  height: 18mm;
-  border-radius: 9mm;
+  height: 70px;
+  border-radius: 35px;
   background-color: #e64747;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   overflow: hidden;
+}
+
+.nav-mobile-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.8666666667);
 }
 
 .nav-desktop {
