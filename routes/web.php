@@ -8,5 +8,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/prueba', [testController::class, 'test'])->name('prueba');
-Route::get('/datos', [dataController::class, 'data'])->name('datos');
+Route::get('/prueba', [testController::class, 'test'] )->name('prueba');
+Route::get('/datos', [dataController::class, 'data'] )->name('datos');
