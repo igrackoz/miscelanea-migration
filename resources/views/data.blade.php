@@ -7,9 +7,7 @@
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 </head>
 <body class="fc-orange">
-    @extends('layouts.nav-mobile')
-    <h1>{{ $title }}</h1>
-    <p>{{ $description }}</p>
+    @extends($deviceType)
     <a href="{{ route('prueba') }}">Ir a prueba</a>
 </body>
 </html>

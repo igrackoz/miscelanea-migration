@@ -1,19 +1,39 @@
+body, html {
+  padding: 0 !important;
+  margin: 0 !important;
+  background-color: rgb(242, 238, 247) !important;
+}
+
+.blue {
+  background-color: #0D6EFD;
+}
+
 .nav-mobile {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    position: fixed;
-    height: 18mm;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    margin: 10px;
-    border-radius: 9mm;
-    box-shadow: -1px 3px 87px -10px white;
-    overflow: hidden;
-    transform: translateY(0px);
-    transition: transform 0.5s cubic-bezier(0.19, 1, 0.19, 1);
-    background-color: #e64747;
-    z-index: 10;
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: 10px;
+  box-shadow: -1px 3px 87px -10px white;
+  z-index: 10;
+  height: 18mm;
+  border-radius: 9mm;
+  background-color: #e64747;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  overflow: hidden;
+}
+
+.nav-desktop {
+  position: fixed;
+  height: 70px;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: -1px 3px 87px -10px white;
+  overflow: hidden;
+  background-color: #e64747;
+  z-index: 10;
 }

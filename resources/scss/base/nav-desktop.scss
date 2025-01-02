@@ -1,0 +1,14 @@
+@use '../vars';
+
+.nav-desktop{
+    
+    position: fixed;
+    height: 70px;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: -1px 3px 87px -10px white;
+    overflow: hidden;
+    background-color: vars.$mainColor;
+    z-index: vars.$navPosition;
+}

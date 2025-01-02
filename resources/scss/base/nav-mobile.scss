@@ -1,0 +1,22 @@
+@use '../vars';
+
+.nav-mobile{
+    
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: 10px;
+    box-shadow: -1px 3px 87px -10px white;
+    z-index: vars.$navPosition;
+
+    height: 18mm;
+    border-radius: 9mm;
+    background-color: vars.$mainColor;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    overflow: hidden;
+}
